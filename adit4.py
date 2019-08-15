@@ -9,32 +9,32 @@ from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
 
-aditmadzs = LineClient(authToken='TOKEN')
+aditmadzs = LineClient('TOKEN')
 aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
 channel = LineChannel(aditmadzs)
 aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='TOKEN LU')
+ki = LineClient('TOKEN LU')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='TOKEN LU')
+kk = LineClient('TOKEN LU')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='TOKEN LU')
+kc = LineClient('TOKEN LU')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u874a7502c02896b2edbb3445c2615d35"]
-owner = ["u874a7502c02896b2edbb3445c2615d35"]
-admin = ["u874a7502c02896b2edbb3445c2615d35"]
-staff = ["u874a7502c02896b2edbb3445c2615d35"]
+creator = ["u9d53cba827ab9671163eb68f9beb7d35","u6bd466342c6ad4d0d28a1fb640a275ca"]
+owner = ["u9d53cba827ab9671163eb68f9beb7d35","u6bd466342c6ad4d0d28a1fb640a275ca"]
+admin = ["u9d53cba827ab9671163eb68f9beb7d35","u6bd466342c6ad4d0d28a1fb640a275ca"]
+staff = ["u9d53cba827ab9671163eb68f9beb7d35","u6bd466342c6ad4d0d28a1fb640a275ca"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
