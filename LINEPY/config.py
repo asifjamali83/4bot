@@ -30,9 +30,9 @@ class Config(object):
     APP_TYPE    = ApplicationType._VALUES_TO_NAMES[368]
     APP_VER     = '2.1.5'
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'ADITMADZS'
+    SYSTEM_NAME = 'Musibat'
     SYSTEM_VER  = '11.2.5'
-    IP_ADDR     = '8.8.8.8'
+    IP_ADDR     = '1.1.1.1'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
     def __init__(self):
