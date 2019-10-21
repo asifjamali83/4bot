@@ -9,22 +9,22 @@ from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
 
-aditmadzs = LineClient('TOKEN')
+aditmadzs = LineClient()
 aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
 channel = LineChannel(aditmadzs)
 aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient('TOKEN LU')
+ki = LineClient()
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient('TOKEN LU')
+kk = LineClient()
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient('TOKEN LU')
+kc = LineClient()
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
@@ -360,7 +360,7 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "╭════════════════" + "\n" + \
-                  "║»» Aditmadzs" + "\n" + \
+                  "║»» Kicker" + "\n" + \
                   "║»════════════════" + "\n" + \
                   "║»» Help Message " + "\n" + \
                   "║»════════════════" + "\n" + \
